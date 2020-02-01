@@ -13,12 +13,17 @@ from PIL import Image
 
 
 
-dataset = '/Users/nilesly/Desktop/test_variegate'
-clipart_path = '/Users/nilesly/Desktop/AIML_semantic_dataset/clipart'
+dataset = 'C:\\Users\\Marianna\\Desktop\\test'
+clipart_path = 'C:\\Users\\Marianna\\Desktop\\AIML_semantic_dataset\\clipart'
 
-quad_file = '/Users/nilesly/Desktop/csv_quaterne_variegate.txt'
+# set con più elementi dalla stessa cartella
+#   csv_quaterne_same_folder.txt
 
-same_folder = True     # da mettere a True se più elementi vengono presi dalla stessa cartella
+# set solo con elementi di cartelle diverse 
+#  csv_quaterne.txt
+quad_file = 'C:\\Users\\Marianna\\Desktop\\csv_quaterne_same_folder.txt'
+
+same_folder = False     # da mettere a True se più elementi vengono presi dalla stessa cartella
 file =  open(quad_file)
 
 count1 = 0
@@ -26,12 +31,20 @@ count2 = 0
 count3 = 0
 count4 = 0
 
+# creo la cartella per i risultati. Creo anche le quattro sottocartelle
+if not os.path.exists(dataset):
+    os.mkdir(dataset)
+    os.mkdir(dataset+"\\1")
+    os.mkdir(dataset+"\\2")
+    os.mkdir(dataset+"\\3")
+    os.mkdir(dataset+"\\4")
+    
 for line in file.readlines():
     
     print(line)
     row = line.split(',')
     print(row)
-    print(row[0])
+    #print(row[0])
     
     odd_path = clipart_path + '/' + row[0].rstrip('\n')
     first_path = clipart_path + '/' + row[1].rstrip('\n')
