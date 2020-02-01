@@ -13,8 +13,8 @@ from PIL import Image
 
 
 
-dataset = 'C:\\Users\\Marianna\\Desktop\\test'
-clipart_path = 'C:\\Users\\Marianna\\Desktop\\AIML_semantic_dataset\\clipart'
+dataset = '/home/rebecca/Desktop/ML_project/semantic_dataset'
+clipart_path = '/home/rebecca/Desktop/ML_project/clipart'
 
 # set con più elementi dalla stessa cartella
 #   csv_quaterne_same_folder.txt

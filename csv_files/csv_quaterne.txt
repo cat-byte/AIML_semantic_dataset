@@ -110,3 +110,18 @@ dragon,bear,lion,elephant
 flamingo,zebra,mouse,cat
 sheep,swan,flamingo,duck
 snail,bee,mosquito,bat
+piano, guitar, harp, violin
+drums, clarinet, saxophone, trombone
+hat, sock, shoe, flip_flops
+jacket, bracelet, wristwatch, necklace
+tent, eraser, marker, pencil
+pillow, crayon, postcard, envelope
+stop_sign, drill, hammer, saw
+stereo, screwdriver, rake, axe
+book, sun, moon, star
+house, cloud, rain, rainbow
+boomerang, skateboard, skateboard, rollerskates
+helmet, bed, stove, toilet
+lipstick, spoon, fork, frying_pan
+mountain, hospital, church, house
+stethoscope, teapot, microwave, toaster
